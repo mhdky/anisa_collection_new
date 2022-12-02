@@ -128,7 +128,7 @@
                 </div>
             @endauth
         </div>
-    </div>
+    </div>    
 
     {{-- close form search --}}
     <div class="close-form-search fixed z-[19] top-0 right-0 bottom-0 left-0 hidden"></div>
