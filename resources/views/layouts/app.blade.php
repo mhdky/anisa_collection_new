@@ -26,7 +26,7 @@
                 z-index: -30;
             }
 
-            .profile-logout, .form-search-desktop {
+            .profile-logout {
                 animation: feed-in 0.5s ;
             }
 
@@ -43,7 +43,7 @@
             }
 
             .form-search-desktop {
-                animation: feed-in-two 0.5s ;
+                /* animation: feed-in-two 0.5s ; */
             }
 
             @keyframes feed-in-two {

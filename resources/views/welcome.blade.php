@@ -1,5 +1,25 @@
 <x-app-layout>
 
+    <x-slot name="slot">
+        {{-- jumbotron --}}
+        <div class="bg-black-primary w-full h-[55vw] mt-[65px] flex items-center relative overflow-hidden md-768:w-[95vw] md-768:mx-auto md-768:mt-2 md-768:rounded-xl md-768:h-[47vw] md-930:w-[96vw] md-930:h-[44vw] lg-1100:w-[1060px] lg-1100:h-[480px]">
+            {{-- tulisan sebaleh kiri --}}
+            <div class="h-full absolute z-10 pl-5 flex flex-col justify-center md-930:pl-14">
+                <h1 class="text-white text-[7vw] font-playfair font-bold md-768:text-[6vw] md-930:uppercase md-930:text-[5vw] lg-1100:text-[54px]">Anisa Collection</h1>
+                <h2 class="text-yellow-primary text-[6vw] font-playfair font-bold mt-1 mb-2 sm-601:mb-4 md-768:text-[4vw] lg-1100:text-[44px]">Live For Fashion</h2>
+                {{-- shop now --}}
+                <a href="/product" class="relative w-[15vw] h-[7vw] sm-601:h-[6vw] md-768:h-[5vw] md-930:w-[10vw] md-930:h-[4vw] lg-1100:w-28 lg-1100:h-10">
+                    <p class="bg-white w-full h-full text-[2.8vw] font-playfair font-bold rounded-md flex justify-center items-center absolute z-10 cursor-default active:top-[2.3px] active:left-[2.3px] sm-601:active:top-[4px] sm-601:active:left-[4px] md-768:text-lg md-930:text-base md-930:cursor-pointer">Shop now</p>
+                    <div class="w-full h-full border border-white rounded-md absolute top-[2.3px] left-[2.3px] sm-601:top-[4px] sm-601:left-[4px]"></div>
+                </a>
+            </div>
+            {{-- image --}}
+            <div class="w-[75vw] absolute right-0 bottom-0 sm-601:w-[80vw] sm-601:-right-[10vw] sm-645:w-[75vw] sm-645:right-0 md-768:w-[60vw] md-930:w-[57vw] lg-1100:w-[615px]">
+                <img src="{{ asset('img/jumbotron_image-2.png') }}" alt="Jumbotron Image" class="sm-645:w-full">
+            </div>
+        </div>
+    </x-slot>
+
     {{-- @if (Route::has('login'))
     <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
         @auth
