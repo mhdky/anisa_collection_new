@@ -40,4 +40,4 @@ closeformSearch.addEventListener('click', () => {
     formSearchDesktop.style.display = 'none';
     iconSearch.style.color = '#1E1E1E';
     closeformSearch.style.display = 'none';
-})
+});
