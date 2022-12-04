@@ -32,7 +32,7 @@
 
         {{-- name section dan card product --}}
         <div class="w-full mt-7 lg-1100:w-[1100px] lg-1100:mx-auto md-768:mt-11">
-            {{-- name section --}}
+            {{-- name section card product --}}
             <div class="flex justify-between items-center px-5">
                 <h1 class="text-lg font-playfair font-bold md-768:text-2xl">New Collection</h1>
                 <a href="/product" class="text-yellow-primary text-sm font-bold md-768:text-lg">See more</a>
@@ -47,208 +47,147 @@
                     </div>
 
                     {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
+                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 750.345</p>
 
                     {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize sm-360:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 15) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-360:block sm-440:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('artka 2019 fall sea Artka 2019 Fall Sea', 17) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-440:block sm-500:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('artka 2019 fall sea Artka 2019 Fall Sea', 23) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-500:block sm-570:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('artka 2019 fall sea Artka 2019 Fall Sea', 15) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-570:block sm-645:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('artka 2019 fall sea Artka 2019 Fall Sea', 18) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-645:block md-830:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('artka 2019 fall sea Artka 2019 Fall Sea', 22) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-830:block md-890:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('artka 2019 fall sea Artka 2019 Fall Sea', 25) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-890:block md-1000:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('artka 2019 fall sea Artka 2019 Fall Sea', 20) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-1000:block sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('artka 2019 fall sea Artka 2019 Fall Sea', 22) }}</h1>
                     
                     {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
+                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block hover:bg-white-hover sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
                 </div>
 
                 <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
                     {{-- image card --}}
                     <div class="w-full h-[40vw] rounded-[10px] overflow-hidden sm-350:h-[41vw] sm-400:h-[42.5vw] sm-440:h-[43.5vw] sm-500:h-[30vw] md-890:h-[22vw] lg-1100:h-[260px] lg-1130:h-[240px]">
-                        <img src="{{ asset('img/product-1.jpg') }}" alt="Product" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/product-11.jpg') }}" alt="Product" class="w-full h-full object-cover">
                     </div>
 
                     {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
+                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 3.410.000</p>
 
                     {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
-                    
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize sm-360:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 15) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-360:block sm-440:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Coat Jacket Winter Coat Jacket Winter', 17) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-440:block sm-500:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Coat Jacket Winter Coat Jacket Winter', 23) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-500:block sm-570:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Coat Jacket Winter Coat Jacket Winter', 15) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-570:block sm-645:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Coat Jacket Winter Coat Jacket Winter', 18) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-645:block md-830:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Coat Jacket Winter Coat Jacket Winter', 22) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-830:block md-890:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Coat Jacket Winter Coat Jacket Winter', 25) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-890:block md-1000:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Coat Jacket Winter Coat Jacket Winter', 20) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-1000:block sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Coat Jacket Winter Coat Jacket Winter', 22) }}</h1>
+
                     {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
+                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block hover:bg-white-hover sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
                 </div>
 
                 <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
                     {{-- image card --}}
                     <div class="w-full h-[40vw] rounded-[10px] overflow-hidden sm-350:h-[41vw] sm-400:h-[42.5vw] sm-440:h-[43.5vw] sm-500:h-[30vw] md-890:h-[22vw] lg-1100:h-[260px] lg-1130:h-[240px]">
-                        <img src="{{ asset('img/product-1.jpg') }}" alt="Product" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/product-5.jpg') }}" alt="Product" class="w-full h-full object-cover">
                     </div>
 
                     {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
+                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 2.988.000</p>
 
                     {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
-                    
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize sm-360:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Selected Femme Kat Selected Femme Kat', 15) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-360:block sm-440:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Selected Femme Kat Selected Femme Kat', 17) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-440:block sm-500:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Selected Femme Kat Selected Femme Kat', 23) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-500:block sm-570:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Selected Femme Kat Selected Femme Kat', 15) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-570:block sm-645:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Selected Femme Kat Selected Femme Kat', 18) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-645:block md-830:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Selected Femme Kat Selected Femme Kat', 22) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-830:block md-890:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Selected Femme Kat Selected Femme Kat', 25) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-890:block md-1000:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Selected Femme Kat Selected Femme Kat', 20) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-1000:block sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Selected Femme Kat Selected Femme Kat', 22) }}</h1>
+
                     {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
+                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block hover:bg-white-hover sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
                 </div>
 
                 <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
                     {{-- image card --}}
                     <div class="w-full h-[40vw] rounded-[10px] overflow-hidden sm-350:h-[41vw] sm-400:h-[42.5vw] sm-440:h-[43.5vw] sm-500:h-[30vw] md-890:h-[22vw] lg-1100:h-[260px] lg-1130:h-[240px]">
-                        <img src="{{ asset('img/product-1.jpg') }}" alt="Product" class="w-full h-full object-cover">
+                        <img src="{{ asset('img/product-19.jpg') }}" alt="Product" class="w-full h-full object-cover">
                     </div>
 
                     {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
+                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 5.504.000</p>
 
                     {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
-                    
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize sm-360:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Embroidered Knitted Embroidered Knitted', 15) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-360:block sm-440:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Embroidered Knitted Embroidered Knitted', 17) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-440:block sm-500:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Embroidered Knitted Embroidered Knitted', 23) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-500:block sm-570:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Embroidered Knitted Embroidered Knitted', 15) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-570:block sm-645:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Embroidered Knitted Embroidered Knitted', 18) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden sm-645:block md-830:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Embroidered Knitted Embroidered Knitted', 22) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-830:block md-890:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Embroidered Knitted Embroidered Knitted', 25) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-890:block md-1000:hidden sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Embroidered Knitted Embroidered Knitted', 20) }}</h1>
+                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-1000:block sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Embroidered Knitted Embroidered Knitted', 22) }}</h1>
+
                     {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
-                </div>
-                <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
-                    {{-- image card --}}
-                    <div class="w-full h-[40vw] rounded-[10px] overflow-hidden sm-350:h-[41vw] sm-400:h-[42.5vw] sm-440:h-[43.5vw] sm-500:h-[30vw] md-890:h-[22vw] lg-1100:h-[260px] lg-1130:h-[240px]">
-                        <img src="{{ asset('img/product-1.jpg') }}" alt="Product" class="w-full h-full object-cover">
-                    </div>
-
-                    {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
-
-                    {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
-                    
-                    {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
-                </div>
-
-                <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
-                    {{-- image card --}}
-                    <div class="w-full h-[40vw] rounded-[10px] overflow-hidden sm-350:h-[41vw] sm-400:h-[42.5vw] sm-440:h-[43.5vw] sm-500:h-[30vw] md-890:h-[22vw] lg-1100:h-[260px] lg-1130:h-[240px]">
-                        <img src="{{ asset('img/product-1.jpg') }}" alt="Product" class="w-full h-full object-cover">
-                    </div>
-
-                    {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
-
-                    {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
-                    
-                    {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
-                </div>
-
-                <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
-                    {{-- image card --}}
-                    <div class="w-full h-[40vw] rounded-[10px] overflow-hidden sm-350:h-[41vw] sm-400:h-[42.5vw] sm-440:h-[43.5vw] sm-500:h-[30vw] md-890:h-[22vw] lg-1100:h-[260px] lg-1130:h-[240px]">
-                        <img src="{{ asset('img/product-1.jpg') }}" alt="Product" class="w-full h-full object-cover">
-                    </div>
-
-                    {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
-
-                    {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
-                    
-                    {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
-                </div>
-                <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
-                    {{-- image card --}}
-                    <div class="w-full h-[40vw] rounded-[10px] overflow-hidden sm-350:h-[41vw] sm-400:h-[42.5vw] sm-440:h-[43.5vw] sm-500:h-[30vw] md-890:h-[22vw] lg-1100:h-[260px] lg-1130:h-[240px]">
-                        <img src="{{ asset('img/product-1.jpg') }}" alt="Product" class="w-full h-full object-cover">
-                    </div>
-
-                    {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
-
-                    {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
-                    
-                    {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
-                </div>
-
-                <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
-                    {{-- image card --}}
-                    <div class="w-full h-[40vw] rounded-[10px] overflow-hidden sm-350:h-[41vw] sm-400:h-[42.5vw] sm-440:h-[43.5vw] sm-500:h-[30vw] md-890:h-[22vw] lg-1100:h-[260px] lg-1130:h-[240px]">
-                        <img src="{{ asset('img/product-1.jpg') }}" alt="Product" class="w-full h-full object-cover">
-                    </div>
-
-                    {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
-
-                    {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
-                    
-                    {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
-                </div>
-
-                <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
-                    {{-- image card --}}
-                    <div class="w-full h-[40vw] rounded-[10px] overflow-hidden sm-350:h-[41vw] sm-400:h-[42.5vw] sm-440:h-[43.5vw] sm-500:h-[30vw] md-890:h-[22vw] lg-1100:h-[260px] lg-1130:h-[240px]">
-                        <img src="{{ asset('img/product-1.jpg') }}" alt="Product" class="w-full h-full object-cover">
-                    </div>
-
-                    {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
-
-                    {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
-                    
-                    {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
-                </div>
-                <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
-                    {{-- image card --}}
-                    <div class="w-full h-[40vw] rounded-[10px] overflow-hidden sm-350:h-[41vw] sm-400:h-[42.5vw] sm-440:h-[43.5vw] sm-500:h-[30vw] md-890:h-[22vw] lg-1100:h-[260px] lg-1130:h-[240px]">
-                        <img src="{{ asset('img/product-1.jpg') }}" alt="Product" class="w-full h-full object-cover">
-                    </div>
-
-                    {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
-
-                    {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
-                    
-                    {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
-                </div>
-
-                <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
-                    {{-- image card --}}
-                    <div class="w-full h-[40vw] rounded-[10px] overflow-hidden sm-350:h-[41vw] sm-400:h-[42.5vw] sm-440:h-[43.5vw] sm-500:h-[30vw] md-890:h-[22vw] lg-1100:h-[260px] lg-1130:h-[240px]">
-                        <img src="{{ asset('img/product-1.jpg') }}" alt="Product" class="w-full h-full object-cover">
-                    </div>
-
-                    {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
-
-                    {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
-                    
-                    {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
-                </div>
-
-                <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
-                    {{-- image card --}}
-                    <div class="w-full h-[40vw] rounded-[10px] overflow-hidden sm-350:h-[41vw] sm-400:h-[42.5vw] sm-440:h-[43.5vw] sm-500:h-[30vw] md-890:h-[22vw] lg-1100:h-[260px] lg-1130:h-[240px]">
-                        <img src="{{ asset('img/product-1.jpg') }}" alt="Product" class="w-full h-full object-cover">
-                    </div>
-
-                    {{-- harga --}}
-                    <p class="text-yellow-primary text-[0.7rem] font-bold mt-1 sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-2">Rp. 1.300.000</p>
-
-                    {{-- nama product --}}
-                    <h1 class="text-white text-[0.8rem] font-bold mt-[1px] sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Artka 2019 Fall Coat Jacket Winter Selected Femme Kat Embroidered Knitted', 17) }}</h1>
-                    
-                    {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
+                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block hover:bg-white-hover sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
                 </div>
 
                 {{-- manipulate --}}
-                <div class="w-[42.5vw] h-[1px] m-1 p-2 sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3"></div>
-                <div class="w-[42.5vw] h-[1px] m-1 p-2 sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3"></div>
-                <div class="w-[42.5vw] h-[1px] m-1 p-2 sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3"></div>
+                <div class="w-[42.5vw] h-[1px] m-1 sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3"></div>
+                <div class="w-[42.5vw] h-[1px] m-1 sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3"></div>
+                <div class="w-[42.5vw] h-[1px] m-1 sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3"></div>
+            </div>
+        </div>
+
+        {{-- anisa collection services --}}
+        <div class="w-full flex flex-wrap px-5 sm-640:justify-between sm-640:px-4 sm-740:px-3 md-768:px-4 lg-1100:w-[1100px] lg-1100:mx-auto">
+            {{-- name section anisa collection services  --}}
+            <h1 class="w-full text-xl font-playfair font-bold mt-2 mb-5 sm-640:mx-1 sm-740:mx-3 md-768:text-2xl md-768:mx-2">Anisa Collection Services</h1>
+            
+            {{-- pengiriman --}}
+            <div class="bg-gradient-to-br from-black-primary to-[#3A3A3A] w-full h-[70vw] mb-3 px-2 py-6 rounded-[10px] flex flex-col justify-evenly items-center sm-366:px-9 sm-423:px-16 sm-479:px-28 sm-479:py-16 sm-570:px-36 sm-570:py-24 sm-640:w-[30.3vw] sm-640:h-[30.3vw] sm-640:mx-1 sm-640:px-6 sm-640:py-3 sm-679:h-[26vw] sm-679:px-1 sm-679:py-3 sm-740:mx-2 sm-740:w-[30vw] sm-740:h-[23vw] md-768:w-[30.1vw] md-768:mx-1 md-830:w-[30.5vw] md-890:w-[30.6vw] md-950:px-5 md-950:py-8 md-1000:px-8 md-1000:w-[30.9vw] lg-1100:w-[343px] lg-1100:h-[300px] lg-1100:py-5 lg-1130:w-[335px] lg-1130:h-[280px]">
+                {{-- icon --}}
+                <div class="bg-slate-primary w-[58px] h-[58px] rounded-full flex justify-center items-center sm-640:w-[45px] sm-640:h-[45px] lg-1100:w-[60px] lg-1100:h-[60px]">
+                    <img src="{{ asset('img/truck.svg') }}" alt="Truck" class="w-9 sm-640:w-7 lg-1100:w-9">
+                </div>
+
+                {{-- service name --}}
+                <h1 class="text-white text-xl font-bold sm-640:text-lg sm-740:text-base lg-1100:text-xl">Pengiriman</h1>
+
+                {{-- keterangan service --}}
+                <p class="text-gray-primary text-lg text-center sm-640:text-base sm-740:text-sm lg-1100:text-lg">Pengiriman terluas dengan menggunakan JNE</p>
+            </div>
+
+            {{-- custumer service --}}
+            <div class="bg-gradient-to-br from-black-primary to-[#3A3A3A] w-full h-[70vw] mb-3 px-2 py-6 rounded-[10px] flex flex-col justify-evenly items-center sm-366:px-9 sm-423:px-16 sm-479:px-28 sm-479:py-16 sm-570:px-36 sm-570:py-24 sm-640:w-[30.3vw] sm-640:h-[30.3vw] sm-640:mx-1 sm-640:px-6 sm-640:py-3 sm-679:h-[26vw] sm-679:px-1 sm-679:py-3 sm-740:mx-2 sm-740:w-[30vw] sm-740:h-[23vw] sm-740:px-3 md-768:w-[30.1vw] md-768:mx-1 md-786:px-4 md-830:w-[30.5vw] md-890:w-[30.6vw] md-950:px-12 md-950:py-8 md-1000:px-14 md-1000:w-[30.9vw] lg-1100:w-[343px] lg-1100:h-[300px] lg-1100:px-10 lg-1100:py-5 lg-1130:w-[335px] lg-1130:h-[280px]">
+                {{-- icon --}}
+                <div class="bg-slate-primary w-[58px] h-[58px] rounded-full flex justify-center items-center sm-640:w-[45px] sm-640:h-[45px] lg-1100:w-[60px] lg-1100:h-[60px]">
+                    <i class="fab fa-whatsapp text-white text-3xl sm-640:text-2xl lg-1100:text-3xl"></i>
+                </div>
+
+                {{-- service name --}}
+                <h1 class="text-white text-xl font-bold sm-640:text-lg sm-740:text-base lg-1100:text-lg">Custumer Service</h1>
+
+                {{-- keterangan service --}}
+                <p class="text-gray-primary text-lg text-center sm-640:text-base sm-740:text-sm lg-1100:text-lg">Custumer service yang ramah dan responsive</p>
+            </div>
+
+            {{-- pembayaran --}}
+            <div class="bg-gradient-to-br from-black-primary to-[#3A3A3A] w-full h-[70vw] mb-3 px-2 py-6 rounded-[10px] flex flex-col justify-evenly items-center sm-366:px-9 sm-423:px-16 sm-479:px-28 sm-479:py-16 sm-570:px-36 sm-570:py-24 sm-640:w-[30.3vw] sm-640:h-[30.3vw] sm-640:mx-1 sm-640:px-6 sm-640:py-3 sm-653:px-7 sm-679:h-[26vw] sm-679:py-3 sm-740:mx-2 sm-740:w-[30vw] sm-740:h-[23vw] md-768:w-[30.1vw] md-768:mx-1 md-830:w-[30.5vw] md-890:w-[30.6vw] md-950:px-14 md-950:py-8 md-1000:px-16 md-1000:w-[30.9vw] lg-1100:w-[343px] lg-1100:h-[300px] lg-1100:py-5 lg-1130:w-[335px] lg-1130:h-[280px]">
+                {{-- icon --}}
+                <div class="bg-slate-primary w-[58px] h-[58px] rounded-full flex justify-center items-center sm-640:w-[45px] sm-640:h-[45px] lg-1100:w-[60px] lg-1100:h-[60px]">
+                    <p class="text-white text-[22px] font-bold sm-640:text-[18px] lg-1100:text-[22px]">Rp</p>
+                </div>
+
+                {{-- service name --}}
+                <h1 class="text-white text-xl font-bold sm-640:text-lg sm-740:text-base lg-1100:text-lg">Pembayaran</h1>
+
+                {{-- keterangan service --}}
+                <p class="text-gray-primary text-lg text-center sm-640:text-base sm-740:text-sm lg-1100:text-lg">Pembayaran bisa melalui transfer bank</p>
             </div>
         </div>
 

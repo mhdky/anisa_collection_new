@@ -103,12 +103,12 @@
                             <div class="relative w-full h-full">
                                 <i class="fas fa-sort-up absolute -top-[5px] left-1/2 -translate-x-1/2 {{ (Request::is('/') ? 'text-yellow-primary' : 'text-black-primary') }}"></i>
                                 {{-- profile --}}
-                                <a href="/profile" class="w-full h-1/2 rounded-t-md px-2 flex items-center {{ (Request::is('/') ? 'hover:bg-[#ffffff29]' : 'hover:bg-black-hover') }}">
+                                <a href="/profile" class="w-full h-1/2 rounded-t-md px-2 flex items-center {{ (Request::is('/') ? 'hover:bg-white-hover' : 'hover:bg-black-hover') }}">
                                     <i class="fas fa-user text-white text-[0.9rem] mr-2"></i>
                                     <p class="text-white text-[0.8rem]">My profile</p>
                                 </a>
                                 {{-- sign out --}}
-                                <form method="POST" action="{{ route('logout') }}" class="w-full h-1/2 rounded-b-md {{ (Request::is('/') ? 'hover:bg-[#ffffff29]' : 'hover:bg-black-hover') }}">
+                                <form method="POST" action="{{ route('logout') }}" class="w-full h-1/2 rounded-b-md {{ (Request::is('/') ? 'hover:bg-white-hover' : 'hover:bg-black-hover') }}">
                                     @csrf
                                     <button type="submit" class="w-full h-full rounded-b-md flex items-center px-2">
                                         <i class="fas fa-sign-out-alt text-white text-[0.9rem] mr-2"></i>
