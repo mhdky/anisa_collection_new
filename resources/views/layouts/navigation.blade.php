@@ -99,11 +99,11 @@
                         <i class="arrow-down fas fa-chevron-down text-white text-[0.7rem] duration-300"></i>
 
                         {{-- profil dan logout --}}
-                        <div class="profile-logout {{ (Request::is('/') ? 'bg-yellow-primary' : 'bg-black-primary') }} hidden w-32 h-20 absolute z-40 -bottom-[90px] left-[1px] rounded-md">
+                        <div class="profile-logout {{ (Request::is('/') ? 'bg-black-primary border border-gray-400' : 'bg-black-primary') }} hidden w-32 h-20 absolute z-40 -bottom-[90px] left-[1px] rounded-md">
                             <div class="relative w-full h-full">
-                                <i class="fas fa-sort-up absolute -top-[5px] left-1/2 -translate-x-1/2 {{ (Request::is('/') ? 'text-yellow-primary' : 'text-black-primary') }}"></i>
+                                <i class="upicon fas fa-sort-up absolute -top-[5px] left-1/2 -translate-x-1/2 {{ (Request::is('/') ? 'text-black-primary' : 'text-black-primary') }}"></i>
                                 {{-- profile --}}
-                                <a href="/profile" class="w-full h-1/2 rounded-t-md px-2 flex items-center {{ (Request::is('/') ? 'hover:bg-white-hover' : 'hover:bg-black-hover') }}">
+                                <a href="/profile" class="myprofile w-full h-1/2 rounded-t-md px-2 flex items-center {{ (Request::is('/') ? 'hover:bg-white-hover' : 'hover:bg-black-hover') }}">
                                     <i class="fas fa-user text-white text-[0.9rem] mr-2"></i>
                                     <p class="text-white text-[0.8rem]">My profile</p>
                                 </a>

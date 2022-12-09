@@ -61,7 +61,7 @@
                     <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-1000:block sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('artka 2019 fall sea Artka 2019 Fall Sea', 22) }}</h1>
                     
                     {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block hover:bg-white-hover sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
+                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[7px] block hover:bg-white-hover sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
                 </div>
 
                 <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
@@ -85,7 +85,7 @@
                     <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-1000:block sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Coat Jacket Winter Coat Jacket Winter', 22) }}</h1>
 
                     {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block hover:bg-white-hover sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
+                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[7px] block hover:bg-white-hover sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
                 </div>
 
                 <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
@@ -109,7 +109,7 @@
                     <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-1000:block sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Selected Femme Kat Selected Femme Kat', 22) }}</h1>
 
                     {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block hover:bg-white-hover sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
+                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[7px] block hover:bg-white-hover sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
                 </div>
 
                 <div class="bg-black-primary w-[42.5vw] m-1 p-2 rounded-[10px] sm-350:w-[43vw] sm-400:w-[44vw] sm-440:w-[45vw] sm-500:w-[30vw] sm-640:w-[30.5vw] sm-640:p-3 sm-740:w-[30.2vw] sm-740:m-2 md-830:w-[30.5vw] md-890:w-[22.5vw] md-950:w-[22.7vw] md-1000:w-[22.9vw] lg-1100:w-[253px] lg-1130:w-[247px] lg-1130:m-3">
@@ -133,7 +133,7 @@
                     <h1 class="text-white text-[0.8rem] font-bold mt-[1px] capitalize hidden md-1000:block sm-375:text-[0.9rem] sm-740:text-[1rem] sm-740:mt-2">{{ Str::limit('Embroidered Knitted Embroidered Knitted', 22) }}</h1>
 
                     {{-- button order --}}
-                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[10px] block hover:bg-white-hover sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
+                    <a href="/" class="bg-slate-primary w-full mt-1 py-1 text-white text-[0.7rem] text-center font-bold rounded-[7px] block hover:bg-white-hover sm-375:text-[0.8rem] sm-740:text-[0.9rem] sm-740:mt-3 lg-1100:py-2">Shop now</a>
                 </div>
 
                 {{-- manipulate --}}
@@ -191,7 +191,38 @@
             </div>
         </div>
 
-        <div class="w-full h-screen"></div>
+        {{-- anisa collection maps --}}
+        <div class="mt-5 px-5 lg-1100:w-[1100px] lg-1100:mx-auto lg-1100:mt-7">
+            {{-- name section --}}
+            <h1 class="text-xl font-playfair font-bold md-768:text-2xl">Temukan Anisa Collection</h1>
+
+            {{-- maps dan detail alamat --}}
+            <div class="flex flex-col mt-5">
+                {{-- maps --}}
+                <div class="w-full rounded-[10px] border border-slate-300">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.759456738868!2d100.26267335788451!3d1.9453145803107008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302d23215fe18109%3A0xc4eba75561ec585e!2sAnisa%20Collection!5e0!3m2!1sen!2sid!4v1670292959538!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[70vw] rounded-[10px] md-830:h-96"></iframe>
+                </div>
+
+                {{-- detail alamat --}}
+                <div class="mt-3">
+                    {{-- icon alamat --}}
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt text-xl text-yellow-primary mr-3"></i>
+                        <p class="text-yellow-primary text-lg font-bold">Lokasi</p>
+                    </div>
+                    {{-- detail --}}
+                    <p class="mt-2">Jl. Sidodadi Dusun 3 Kec. Kampung Rakyat, Labuhan Batu Selatan</p>
+
+                    {{-- icon telepon --}}
+                    <div class="flex items-center mt-5">
+                        <i class="fas fa-phone-alt text-xl text-yellow-primary mr-3"></i>
+                        <p class="text-yellow-primary text-lg font-bold">Telepon / Whatsapp</p>
+                    </div>
+                    {{-- detail --}}
+                    <p class="mt-2">+6282246924258</p>
+                </div>
+            </div>
+        </div>
     </x-slot>
 
     {{-- @if (Route::has('login'))
