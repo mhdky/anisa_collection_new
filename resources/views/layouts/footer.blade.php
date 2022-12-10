@@ -33,5 +33,5 @@
     </div>
 
     {{-- copyright --}}
-    <p class="text-[#727272] text-[0.8rem] text-center mt-5">© 2022 ANISA COLLECTION | All Right Reversed</p>
+    <p class="text-[#727272] text-[0.8rem] text-center mt-5">© {{ now()->year }} ANISA COLLECTION | All Right Reversed</p>
 </div>

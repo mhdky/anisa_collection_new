@@ -21,6 +21,10 @@
 
         {{-- my css --}}
         <style>
+            html {
+                scroll-behavior: smooth;
+            }
+
             .list-mobile {
                 transform: translateY(-100%);
                 z-index: -30;

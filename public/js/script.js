@@ -41,3 +41,30 @@ closeformSearch.addEventListener('click', () => {
     iconSearch.style.color = '#1E1E1E';
     closeformSearch.style.display = 'none';
 });
+
+const whatsapp = document.querySelector('.whatsapp');
+const whatsappCs = document.querySelector('.whatsapp-cs');
+whatsapp.addEventListener('mouseenter', () => {
+    whatsappCs.style.display = 'block';
+    whatsappCs.style.transitionDelay = '0.5s';
+});
+whatsapp.addEventListener('mouseleave', () => {
+    whatsappCs.style.display = 'none';
+});
+
+// back to top
+const backTop = document.querySelector('.back-top');
+window.onscroll = function() {
+    scrollFunction();
+};
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        backTop.style.display = 'flex';
+    } else {
+        backTop.style.display = 'none';
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
