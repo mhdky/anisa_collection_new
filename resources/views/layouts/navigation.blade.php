@@ -24,13 +24,13 @@
     {{-- list navigation mobile --}}
     <div class="list-mobile bg-white fixed top-0 right-0 left-0 bottom-0 px-5 md-768:hidden">
         {{-- search mobile --}}
-        <form action="/" autocomplete="off" class="mt-[90px]">
-            <input type="search" name="search" placeholder="Masukan kata kunci pencarian" class="w-full rounded-[5px] bg-gray-100 border border-gray-300 outline-none focus:border-transparent focus:ring-yellow-primary focus:shadow-sm focus:shadow-yellow-primary">
+        <form action="/product" autocomplete="off" class="mt-[90px]">
+            <input type="search" name="search" value="{{ request('search') }}" placeholder="Masukan kata kunci pencarian" class="w-full rounded-[5px] bg-gray-100 border border-gray-300 outline-none focus:border-transparent focus:ring-yellow-primary focus:shadow-sm focus:shadow-yellow-primary">
         </form>
         {{-- list navigation --}}
         <ul class="mt-5 font-bold">
             <li class="my-3"><a href="/" class="{{ (Request::is('/') ? 'text-yellow-primary' : 'text-gray-500') }}">Home</a></li>
-            <li class="my-3"><a href="/product" class="{{ (Request::is('product') ? 'text-yellow-primary' : 'text-gray-500') }}">Product</a></li>
+            <li class="my-3"><a href="/product" class="{{ (Request::is('product*') || Request::is('collection*') ? 'text-yellow-primary' : 'text-gray-500') }}">Product</a></li>
             <li class="my-3"><a href="/howtoorder" class="{{ (Request::is('howtoorder') ? 'text-yellow-primary' : 'text-gray-500') }}">How To Order</a></li>
             <li class="my-3"><a href="/aboutus" class="{{ (Request::is('aboutus') ? 'text-yellow-primary' : 'text-gray-500') }}">About Us</a></li>
         </ul>
@@ -51,11 +51,7 @@
     </div>
 
     {{-- navigation desktop --}}
-    @if (Request::is('/'))
-    <div class="bg-white hidden justify-center md-768:flex">
-    @else
-    <div class="bg-white hidden justify-center border border-gray-200 md-768:flex">
-    @endif
+    <div class="bg-white hidden justify-center {{ (Request::is('/') ? '' : 'border border-gray-200') }} md-768:flex">
         <div class="w-full py-4 px-5 flex justify-between items-center lg-1100:w-[1100px]">
             {{-- logo dan list navigation desktop --}}
             <div class="flex items-center">
@@ -66,11 +62,11 @@
                     <li class="search-desktop mr-3 relative">
                         {{-- search desktop --}}
                         <i class="icon-search fas fa-search text-[0.75rem] cursor-pointer hover:text-yellow-primary"></i>
-                        <form action="/" method="get" autocomplete="off" class="form-search-desktop hidden">
+                        <form action="/product" method="get" autocomplete="off" class="form-search-desktop hidden">
                             <div class="bg-yellow-primary w-72 h-10 absolute z-30 top-8 -left-5 rounded-md shadow-md">
                                 <div class="relative w-full h-full p-[3px] flex items-center">
                                     <i class="fas fa-sort-up text-yellow-primary absolute -top-[5px] left-[22px]"></i>
-                                    <input type="search" name="search" placeholder="Masukan keyword pencarian" id="input-search" class="bg-white text-sm w-full h-full rounded-l-[3px] border border-white outline-none focus:ring-transparent focus:border-transparent">
+                                    <input type="search" name="search" value="{{ request('search') }}" placeholder="Masukan keyword pencarian" id="input-search" class="bg-white text-sm w-full h-full rounded-l-[3px] border border-white outline-none focus:ring-transparent focus:border-transparent">
                                     <button type="submit" class="bg-black-primary h-full rounded-r-[3px] px-4"><i class="fas fa-search text-white text-sm"></i></button>
                                 </div>
                             </div>
@@ -78,7 +74,7 @@
                     </li>
                     {{-- list navigation desktop --}}
                     <li class="mr-3"><a href="/" class="{{ (Request::is('/') ? 'text-yellow-primary' : '') }} text-[0.9rem] hover:text-yellow-primary md-950:text-sm">Home</a></li>
-                    <li class="mr-3"><a href="/product" class="{{ (Request::is('product*') ? 'text-yellow-primary' : '') }} text-[0.9rem] hover:text-yellow-primary md-950:text-sm">Product</a></li>
+                    <li class="mr-3"><a href="/product" class="{{ (Request::is('product*') || Request::is('collection*') ? 'text-yellow-primary' : '') }} text-[0.9rem] hover:text-yellow-primary md-950:text-sm">Product</a></li>
                     <li class="mr-3"><a href="/howtoorder" class="{{ (Request::is('howtoorder*') ? 'text-yellow-primary' : '') }} text-[0.9rem] hover:text-yellow-primary md-950:text-sm">How to order</a></li>
                     <li class="mr-3"><a href="/aboutus" class="{{ (Request::is('aboutus') ? 'text-yellow-primary' : '') }} text-[0.9rem] hover:text-yellow-primary md-950:text-sm">About us</a></li>
                 </ul>
@@ -95,7 +91,7 @@
 
                     {{-- nama pengguna --}}
                     <div class="nama-pengguna bg-black-primary w-32 ml-5 py-[5px] px-2 flex justify-between items-center rounded-md relative cursor-pointer md-950:py-2">
-                        <p class="text-white text-[0.8rem]">{{ Str::limit(Auth::user()->name, 14) }}</p>
+                        <p class="text-white text-[0.8rem]">{{ Str::limit(Str::title(Auth::user()->name), 12) }}</p>
                         <i class="arrow-down fas fa-chevron-down text-white text-[0.7rem] duration-300"></i>
 
                         {{-- profil dan logout --}}
@@ -140,7 +136,7 @@
         </div>
 
         <div class="whatsapp-cs bg-black-primary h-max mt-1 ml-3 p-2 hidden border border-gray-300 rounded-[5px] relative opacity-0 md-830:opacity-100">
-            <p class="text-white text-[0.8rem]">Custumer services</p>
+            <p class="text-white text-[0.8rem]">Custumer service</p>
 
             <i class="fas fa-caret-left text-xl absolute bottom-2 -left-[6px]"></i>
         </div>

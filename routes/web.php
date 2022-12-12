@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +18,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home', [
+        'title' => 'Anisa Collection - Live For Fashion',
+        'products' => Product::latest()->take(4)->get()
+    ]);
 });
+
+Route::get('/product', [ProductController::class, 'index']);
+
+Route::get('/collection/{category:slug}', [CategoryController::class, 'show']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
