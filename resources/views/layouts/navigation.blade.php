@@ -38,7 +38,7 @@
         @auth
             <div class="w-full border-t border-gray-300 mt-5">
                 {{-- nama pengguna mobile --}}
-                <h1 class="text-yellow-primary text-xl font-bold mt-3">{{ Str::limit(Auth::user()->name, 25) }}</h1>
+                <h1 class="text-yellow-primary text-xl font-bold mt-3">{{ Str::limit(Str::title(Auth::user()->name), 25) }}</h1>
                 {{-- my profile mobile --}}
                 <a href="/profile" class="text-gray-500 font-bold mt-3 block">My Profile</a>
                 {{-- sign out mobile --}}
@@ -51,7 +51,7 @@
     </div>
 
     {{-- navigation desktop --}}
-    <div class="bg-white hidden justify-center {{ (Request::is('/') ? '' : 'border border-gray-200') }} md-768:flex">
+    <div class="bg-white hidden justify-center {{ (Request::is('/') ? '' : 'border-b border-gray-200') }} md-768:flex">
         <div class="w-full py-4 px-5 flex justify-between items-center lg-1100:w-[1100px]">
             {{-- logo dan list navigation desktop --}}
             <div class="flex items-center">

@@ -21,6 +21,11 @@ return new class extends Migration
             $table->text('detail');
             $table->integer('price');
             $table->string('image');
+            $table->integer('stock');
+            $table->string('size');
+            $table->string('merek');
+            $table->string('bahan');
+            $table->string('jenis_lengan');
             $table->timestamps();
         });
     }

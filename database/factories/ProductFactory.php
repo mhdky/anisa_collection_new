@@ -23,6 +23,11 @@ class ProductFactory extends Factory
             'detail' => fake()->paragraph(mt_rand(3,5)),
             'price' => mt_rand(700000, 3700000),
             'image' => 'product-' . mt_rand(1,20) . '.jpg',
+            'stock' => mt_rand(30,150),
+            'size' => 'XL',
+            'merek' => 'nike',
+            'bahan' => 'catton combed 20s',
+            'jenis_lengan' => 'lengan panjang'
         ];
     }
 }

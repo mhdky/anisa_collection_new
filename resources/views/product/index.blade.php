@@ -5,12 +5,12 @@
     </x-slot>
 
     <x-slot name="slot">
-            {{-- name section dan card product --}}
+        {{-- name section dan card product --}}
         <div class="w-full mt-20 lg-1100:w-[1100px] lg-1100:mx-auto md-768:mt-11">
             {{-- name section card product --}}
             <div class="flex justify-between items-center px-5">                
                 @if (Request::is('product'))
-                    <h1 class="text-lg font-playfair font-bold md-768:text-2xl">{{ (request('search') ? Str::limit(Str::title(request('search')), 20) : 'All Collection') }}</h1>
+                    <h1 class="text-lg {{ (request('search') ? '' : 'font-playfair' ) }} font-bold md-768:text-2xl">{{ (request('search') ? Str::limit(Str::title( '"' . request('search') .'"' ), 20) : 'All Collection') }}</h1>
                 @elseif(Request::is('collection/men'))
                     <h1 class="text-lg font-playfair font-bold md-768:text-2xl">Men Collection</h1>
                 @elseif(Request::is('collection/women'))
@@ -51,7 +51,6 @@
                         <div class="h-max flex items-center">
                             <img src="{{ asset('img/search.png') }}" alt="Searching Icon" class="w-10 h-max mr-3">
                             <p class="text-gray-400 font-bold">Product could not be found</p>
-                            <img src="{{ asset('img/search.png') }}" alt="Searching Icon" class="w-10 h-max ml-3 rotate-90">
                         </div>
                     </div>
                 @endif

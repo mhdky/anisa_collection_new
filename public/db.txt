@@ -1,0 +1,4 @@
+merek
+bahan
+panjang lengan
+stock

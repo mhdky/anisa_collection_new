@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('password')
         ]);
 
-        Product::factory(204)->create();
+        Product::factory(80)->create();
 
         Category::create([
             'name' => 'Women Collection',

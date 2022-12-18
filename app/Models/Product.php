@@ -20,4 +20,8 @@ class Product extends Model
             return $query->where('name', 'like', '%' . request('search') . '%');
         }
     }
+
+    public function order_detail() {
+        return $this->hasMany(Order_Detail::class);
+    }
 }

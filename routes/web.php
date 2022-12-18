@@ -28,6 +28,10 @@ Route::get('/product', [ProductController::class, 'index']);
 
 Route::get('/collection/{category:slug}', [CategoryController::class, 'show']);
 
+Route::get('/product/{product:url}', [ProductController::class, 'show']);
+
+Route::post('/order/{product:id}', [ProductController::class, 'order']);
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

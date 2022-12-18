@@ -23,6 +23,11 @@ class User extends Authenticatable
         'password',
     ];
 
+    // user ke order
+    public function order() {
+        return $this->hasMany(Order::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
